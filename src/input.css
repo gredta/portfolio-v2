@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'InterVariable-Italic';
+    src: url('assets/fonts/InterVariable-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'InterVariable';
+    src: url('/assets/fonts/InterVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Editorial New';
+    src: url('/assets/fonts/PPEditorialNew-Ultralight-BF644b21500d0c0.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('/assets/fonts/PPEditorialNew-UltralightItalic-BF644b214ff1e9b.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('/assets/fonts/PPEditorialNew-Italic-BF644b214fb0c0a.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('/assets/fonts/PPEditorialNew-Regular-BF644b214ff145f.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('/assets/fonts/PPEditorialNew-Ultrabold-BF644b21500840c.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('/assets/fonts/PPEditorialNew-UltraboldItalic-BF644b214faef01.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+  h1, h2, h3, .fancy-heading {
+    font-family: 'Editorial New', sans-serif;
+    font-weight: 100;
+  }
+
+  
+  h1.italic, h2.italic {
+    font-style: italic; /* Apply italic to the h1 or h2 */
+  }
+
+  body{
+    color: #323232;
+    overflow-x: hidden;
+
+  }
+
+
+  .top-right-container {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    display: flex;
+    rotate: 18.67deg;
+    z-index: -1;
+    flex-direction: column; /* Stack the images vertically */
+  }
+  
+  /* Optional: Make images smaller or set a specific size */
+  .top-right-image {
+    width: 700px;  /* You can adjust the size as needed */
+    height: auto;
+  }
+
+  .left-middle-container {
+    position: absolute;
+    top: 500px;
+    left: -50px;
+    display: flex;
+    rotate: -23.98deg;
+    z-index: -1;
+    flex-direction: column; /* Stack the images vertically */
+    gap: 10px; /* Add space between the images */
+    padding: 10px; /* Add padding to avoid touching edges */
+
+  }
+  
