@@ -1,4 +1,5 @@
 // Animate the <h1> from the top
+
 gsap.from("h1", {
     duration: 1,
     y: -50,
@@ -62,7 +63,7 @@ if (typingElement) {
 const carousel = document.querySelector(".carousel-inner");
 
 if (carousel) {
-  const totalWidth = carousel.scrollWidth / 2; // Width of one full logo set
+  const totalWidth = carousel.scrollWidth / 2; 
 
   gsap.to(carousel, {
     x: `-=${totalWidth}`,
@@ -70,7 +71,34 @@ if (carousel) {
     ease: "linear",
     repeat: -1,
     modifiers: {
-      x: gsap.utils.unitize(x => parseFloat(x) % totalWidth) // Loop smoothly
+      x: gsap.utils.unitize(x => parseFloat(x) % totalWidth) 
     }
   });
 }
+gsap.utils.toArray('#project-carousel .snap-center').forEach(card => {
+  gsap.fromTo(card, 
+    { opacity: 0.5, scale: 0.9 },
+    {
+      opacity: 1,
+      scale: 1,
+      scrollTrigger: {
+        trigger: card,
+        start: "left center",
+        end: "right center",
+        scrub: true,
+        containerAnimation: ScrollTrigger.getById("carouselAnim")
+      },
+      ease: "power2.out"
+    }
+  );
+});
+
+
+// JS
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',         // Allow slides to size themselves
+  centeredSlides: true,          // Center active slide
+  spaceBetween: 80,              // Space between slides
+  loop: true,
+  mousewheel: false
+});
