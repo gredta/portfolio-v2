@@ -31,25 +31,25 @@
                 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full 
                 after:bg-black after:scale-x-0 after:origin-left 
                 after:transition-transform after:duration-300 
-                hover:after:scale-x-100" href="/">projects</a></div>
+                hover:after:scale-x-100" href="#projects">projects</a></div>
             <img src="./svgs/Dawn.svg" alt="flower icon" class="dawn-header w-7 h-7">
             <div class=""><a class="relative inline-block 
                 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full 
                 after:bg-black after:scale-x-0 after:origin-left 
                 after:transition-transform after:duration-300 
-                hover:after:scale-x-100" href="/">experience</a></div>
+                hover:after:scale-x-100" href="#experience">experience</a></div>
             <img src="./svgs/Dawn.svg" alt="flower icon" class="dawn-header w-7 h-7">
             <div class=""><a class="relative inline-block 
                 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full 
                 after:bg-black after:scale-x-0 after:origin-left 
                 after:transition-transform after:duration-300 
-                hover:after:scale-x-100" href="/">education</a></div>
+                hover:after:scale-x-100" href="#education">education</a></div>
             <img src="./svgs/Dawn.svg" alt="flower icon" class="dawn-header w-7 h-7">
             <div class=""><a class="relative inline-block 
                 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full 
                 after:bg-black after:scale-x-0 after:origin-left 
                 after:transition-transform after:duration-300 
-                hover:after:scale-x-100" href="/">contact</a></div>
+                hover:after:scale-x-100" href="#contact">contact</a></div>
         </div>
     </header>
     <div class="top-right-container overflow-hidden relative">
@@ -133,18 +133,226 @@
     </div>
   </section>
 
-
-  <section class="my-20 ">
-    <h3 class="text-center text-5xl mt-0 mb-10 italic">Select Projects</h3>
-    <div class="swiper-container md:px-44 md:h-auto h-64">
+  <section id="projects" class="my-20">
+    <h3 class="text-center text-5xl mt-0 mb-10 italic">Projects</h3>
+    <div class="swiper-container lg:px-[15rem] px-[0rem] overflow-hidden">
       <div class="swiper-wrapper z-20">
-        <div class="swiper-slide z-10 max-h-[35rem] border-2 border-black rounded-xl object-cover w-full relative overflow-y-auto bg-pink mx-auto"><img src="./images/plum.png"  width="100%"></div>
-        <div class="swiper-slide z-10 max-h-[35rem] border-2 border-black rounded-xl object-cover relative overflow-y-auto bg-pink mx-auto"><img src="./images/thebarbshop-full.png" width="100%"></div>
-        <div class="swiper-slide z-10 max-h-[35rem] border-2 border-black rounded-xl object-cover w-full relative overflow-y-auto bg-pink mx-auto"><img src="./images/plum.png" width="100%"></div>
-        <div class="swiper-slide z-10 max-h-[35rem] border-2 border-black rounded-xl object-cover w-full relative overflow-y-auto bg-pink mx-auto"><img src="./images/blm.png" width="100%"></div>
+  
+        <!-- Slide 1 -->
+        <div class="swiper-slide flex flex-col items-center lg:mr-auto">
+          <div class="lg:max-h-[25rem] max-h-[15rem] rounded-t-xl overflow-y-auto w-full">
+            <img src="./images/plum.jpg" width="100%">
+          </div>
+          <div class="text-left my-6 lg:grid grid-cols-[2fr_1fr] mx-4">
+            <div>
+              <h2 class="text-2xl lg:text-left text-center">Plum</h2>
+              <p class="text-sm mt-1 lg:text-left text-center">A custom Shopify Store.</p>
+              <a href="https://loveyourplum.com" target="_blank" 
+              class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1 lg:w-auto w-full lg:justify-normal justify-between">
+             <span class="link-text">Live Site</span>
+             <img src="./images/arrow-right.svg" alt="arrow" 
+                  class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
+           </a>
+          </div>
+          <div class="flex text-center justify-center gap-2 flex-wrap mx-auto uppercase font-InterVariable font-light text-xs lg:mt-0 mt-6">
+            <div class="bg-orange rounded-xl px-3 py-1 lg:w-fit h-fit lg:w-min">HTML</div>
+            <div class="bg-purple rounded-xl px-3 py-1 lg:w-fit h-fit lg:w-min">Tailwind CSS</div>
+            <div class="bg-lightpurple rounded-xl px-3 lg:w-fit py-1 h-fit lg:w-min">JavaScript</div>
+            <div class="bg-yellow rounded-xl px-3 py-1  lg:w-fit h-fit lg:w-min">Shopify Liquid</div>
+            <div class="bg-orange rounded-xl px-3 py-1 lg:w-fit h-fit lg:w-min">Git</div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide flex flex-col items-center">
+          <div class="max-h-[25rem] rounded-t-xl overflow-y-auto w-full">
+            <img src="./images/ochi.png" width="100%">
+          </div>
+          <div class="text-left my-6 grid grid-cols-[2fr_1fr] mx-4">
+            <div>
+              <h2 class="text-2xl">Ochi</h2>
+              <p class="text-sm mt-1">A custom Shopify store. Live site is not available yet.</p>
+          </div>
+          <div class="flex justify-center text-center gap-2 flex-wrap mx-auto uppercase font-InterVariable font-light text-xs">
+            <div class="bg-orange rounded-xl px-3 py-1 h-fit lg:w-auto w-min">HTML</div>
+            <div class="bg-purple rounded-xl px-3 py-1 h-fit lg:w-auto w-min">Tailwind CSS</div>
+            <div class="bg-lightpurple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">JavaScript</div>
+            <div class="bg-yellow rounded-xl px-3 py-1 h-fit lg:w-auto w-min">Shopify Liquid</div>
+            <div class="bg-orange rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Git</div>
+          </div>
+        </div>
       </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide flex flex-col items-center">
+            <div class="max-h-[25rem] rounded-t-xl overflow-y-auto w-full">
+              <img src="./images/twod.jpg" width="100%">
+            </div>
+            <div class="text-left my-6 grid grid-cols-[2fr_1fr] mx-4">
+              <div>
+                <h2 class="text-2xl">The Wise Old Dog</h2>
+                <p class="text-sm mt-1">A custom Shopify store.</p>
+                <a href="https://wiseolddog.com" target="_blank" 
+                class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1">
+               <span class="link-text">Live Site</span>
+               <img src="./images/arrow-right.svg" alt="arrow" 
+                    class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
+             </a>
+            </div>
+            <div class="flex justify-center text-center gap-2 flex-wrap mx-auto uppercase font-InterVariable font-light text-xs">
+              <div class="bg-orange rounded-xl px-3 py-1 h-fit lg:w-auto w-min">HTML</div>
+              <div class="bg-purple rounded-xl px-3 py-1 h-fit lg:w-auto w-min">Tailwind CSS</div>
+              <div class="bg-lightpurple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">JavaScript</div>
+              <div class="bg-yellow rounded-xl px-3 py-1 h-fit lg:w-auto w-min">Shopify Liquid</div>
+              <div class="bg-orange rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Git</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide flex flex-col items-center">
+          <div class="max-h-[25rem] rounded-t-xl overflow-y-auto w-full">
+            <img src="./images/thebarbshop-full.jpg" width="100%">
+          </div>
+          <div class="text-left my-6 grid grid-cols-[2fr_1fr] mx-4">
+            <div>
+              <h2 class="text-2xl">The Barb Shop</h2>
+              <p class="text-sm mt-1">A custom Shopify store.</p>
+              <a href="https://thebarbshop.com" target="_blank" 
+              class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1">
+             <span class="link-text">Live Site</span>
+             <img src="./images/arrow-right.svg" alt="arrow" 
+                  class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
+           </a>
+          </div>
+          <div class="flex justify-center text-center gap-2 flex-wrap mx-auto uppercase font-InterVariable font-light text-xs">
+            <div class="bg-orange rounded-xl px-3 py-1  lg:w-auto h-fit w-min">HTML</div>
+            <div class="bg-purple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Tailwind CSS</div>
+            <div class="bg-lightpurple rounded-xl px-3 lg:w-auto py-1 h-fit w-min">JavaScript</div>
+            <div class="bg-yellow rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Shopify Liquid</div>
+            <div class="bg-orange rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Git</div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide flex flex-col items-center">
+          <div class="max-h-[25rem] rounded-t-xl overflow-y-auto w-full">
+            <img src="./images/tbh.jpg" width="100%">
+          </div>
+          <div class="text-left my-6 grid grid-cols-[2fr_1fr] mx-4">
+            <div>
+              <h2 class="text-2xl">The BridgeHouse</h2>
+              <p class="text-sm mt-1">A static landing page.</p>
+              <a href="https://thebridgehouserd.com" target="_blank" 
+              class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1">
+             <span class="link-text">Live Site</span>
+             <img src="./images/arrow-right.svg" alt="arrow" 
+                  class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
+           </a>
+          </div>
+          <div class="flex justify-center text-center gap-2 flex-wrap mx-auto uppercase font-InterVariable font-light text-xs">
+            <div class="bg-orange rounded-xl px-3 py-1 h-fit lg:w-auto w-min">HTML</div>
+            <div class="bg-purple rounded-xl px-3 py-1 h-fit lg:w-auto w-min">Tailwind CSS</div>
+            <div class="bg-lightpurple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">JavaScript</div>
+            <div class="bg-yellow rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Git</div>
+            <div class="bg-orange rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Bootstrap</div>
+          </div>
+        </div>
+      </div>
+
+
+
+         <!-- Slide 6 -->
+        <div class="swiper-slide flex flex-col items-center">
+          <div class="max-h-[25rem] rounded-t-xl overflow-y-auto w-full">
+            <img src="./images/ed-renovations.jpg" width="100%">
+          </div>
+          <div class="text-left my-6 grid grid-cols-[2fr_1fr] mx-4">
+              <div>
+                <h2 class="text-2xl">E&D Renovations</h2>
+                <p class="text-sm mt-1">A static customized website.</p>
+                <a href="https://ed-renovations.com" target="_blank" 
+                class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1">
+               <span class="link-text">Live Site</span>
+               <img src="./images/arrow-right.svg" alt="arrow" 
+                    class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
+             </a>
+            </div>
+            <div class="flex gap-2 text-center flex-wrap mx-auto uppercase font-InterVariable font-light text-xs justify-center">
+              <div class="bg-orange rounded-xl px-3 py-1 lg:w-auto h-fit w-min">HTML</div>
+              <div class="bg-purple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">CSS</div>
+              <div class="bg-lightpurple rounded-xl px-3 py-1  lg:w-auto h-fit w-min">SASS</div>
+              <div class="bg-yellow rounded-xl px-3 lg:w-auto py-1 h-fit w-min">JavaScript</div>
+              <div class="bg-orange rounded-xl px-3 lg:w-auto py-1 h-fit w-min">Node.js</div>
+              <div class="bg-purple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">11ty</div>
+              <div class="bg-lightpurple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Decap CMS</div>
+              <div class="bg-yellow rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Git</div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="swiper-slide flex flex-col items-center">
+          <div class="max-h-[25rem] rounded-t-xl overflow-y-auto w-full">
+            <img src="./images/kao.jpg" width="100%">
+          </div>
+          <div class="text-left my-6 grid grid-cols-[2fr_1fr] mx-4">
+            <div>
+              <h2 class="text-2xl">Kao</h2>
+              <p class="text-sm mt-1">A custom Shopify E-commerce website.</p>
+              <a href="https://mykaoshop.com" target="_blank" 
+              class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1">
+             <span class="link-text">Live Site</span>
+             <img src="./images/arrow-right.svg" alt="arrow" 
+                  class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
+           </a>
+          </div>
+          <div class="flex justify-center text-center gap-2 flex-wrap mx-auto uppercase font-InterVariable font-light text-xs">
+            <div class="bg-orange rounded-xl px-3 py-1 h-fit lg:w-auto w-min">HTML</div>
+            <div class="bg-purple rounded-xl px-3 py-1 h-fit lg:w-auto w-min">Tailwind CSS</div>
+            <div class="bg-lightpurple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">JavaScript</div>
+            <div class="bg-yellow rounded-xl px-3 py-1 h-fit lg:w-auto w-min">Shopify Liquid</div>
+            <div class="bg-orange rounded-xl px-3 py-1 h-fit lg:w-auto w-min">GSAP.js</div>
+            <div class="bg-purple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Git</div>
+          </div>
+        </div>
+      </div>
+  
+        <!-- Slide 8  -->
+        <div class="swiper-slide flex flex-col items-center">
+          <div class="max-h-[25rem] rounded-t-xl overflow-y-auto w-full">
+            <img src="./images/blm.jpg" width="100%">
+          </div>
+          <div class="text-left my-6 grid grid-cols-[2fr_1fr] mx-4">
+            <div>
+              <h2 class="text-2xl">Bloomingdale's</h2>
+              <p class="text-sm mt-1">A custom AEM E-commerce website.</p>
+              <a href="https://bloomingdales.com" target="_blank" 
+              class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1">
+             <span class="link-text">Live Site</span>
+             <img src="./images/arrow-right.svg" alt="arrow" 
+                  class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
+           </a>
+          </div>
+          <div class="flex justify-center text-center gap-2 flex-wrap mx-auto uppercase font-InterVariable font-light text-xs">
+            <div class="bg-orange rounded-xl px-3 py-1 h-fit lg:w-auto w-min">HTML</div>
+            <div class="bg-purple rounded-xl px-3 py-1 h-fit lg:w-auto w-min">CSS</div>
+            <div class="bg-lightpurple rounded-xl px-3 py-1 lg:w-auto h-fit w-min">JavaScript</div>
+            <div class="bg-yellow rounded-xl px-3 py-1 lg:w-auto h-fit w-min">AEM</div>
+            <div class="bg-orange rounded-xl px-3 py-1 lg:w-auto h-fit w-min">Contentful</div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
-  </section> 
+  </section>
+  
+  
+  
 
  <!-- <section>
     <div class="my-[5rem]">
@@ -153,9 +361,14 @@
     </div>
   </section> -->
 
-  <section>
+  <section id="experience">
     <h3 class="text-center text-5xl mt-0 mb-10 italic">Experience</h3>
+    
   </section>
+
+  <footer>
+
+  </footer>
 
 
   <script type="module" src="./src/main.js"></script>

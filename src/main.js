@@ -94,11 +94,33 @@ gsap.utils.toArray('#project-carousel .snap-center').forEach(card => {
 });
 
 
-// JS
 const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',         // Allow slides to size themselves
-  centeredSlides: true,          // Center active slide
-  spaceBetween: 80,              // Space between slides
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 80, // default (desktop)
   loop: true,
-  mousewheel: false
+  mousewheel: false,
+  speed: 800,
+
+  breakpoints: {
+    768: {
+      spaceBetween: 80, // tablets and up
+    },
+    0: {
+      spaceBetween: 21, // mobile
+    },
+  },
 });
+const links = document.querySelectorAll('.live-link');
+
+  links.forEach(link => {
+    const arrow = link.querySelector('.arrow-icon');
+
+    link.addEventListener('mouseenter', () => {
+      gsap.to(arrow, { x: 5, duration: 0.3, ease: "power2.out" });
+    });
+
+    link.addEventListener('mouseleave', () => {
+      gsap.to(arrow, { x: 0, duration: 0.3, ease: "power2.inOut" });
+    });
+  });

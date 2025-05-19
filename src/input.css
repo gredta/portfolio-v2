@@ -101,7 +101,7 @@
     z-index: -1;
     flex-direction: column; /* Stack the images vertically */
     gap: 10px; /* Add space between the images */
-    padding: 10px; /* Add padding to avoid touching edges */
+    padding: 40px; /* Add padding to avoid touching edges */
   }
 
 
@@ -142,5 +142,13 @@ body {
   overflow-x: hidden;
   position: relative; /* optional, helps with containing abs. elements */
   margin-bottom: 5rem;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem; /* Adjust to your header height */
+
+
 }
   

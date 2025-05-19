@@ -26,6 +26,7 @@ module.exports = {
         orange: "#FFB985", // Custom orange color
         purple: "#BDB4FF", // Custom purple color
         lightpurple: "#EDB5F7", // Custom light purple color
+        yellow: "#EAFC88",
       },
       borderRadius: {
         none: "0",    // Border radius "none"
