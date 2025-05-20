@@ -94,8 +94,8 @@
   
   .left-middle-container {
     position: absolute;
-    top: 500px;
-    left: -50px;
+    top: 25rem;
+    left: -5rem;
     display: flex;
     rotate: -23.98deg;
     z-index: -1;

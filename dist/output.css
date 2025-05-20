@@ -636,36 +636,16 @@ video {
   margin-top: 5rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mt-\[5rem\] {
-  margin-top: 5rem;
-}
-
-.mt-\[10rem\] {
-  margin-top: 10rem;
-}
-
-.mt-\[8rem\] {
-  margin-top: 8rem;
-}
-
-.mt-\[4rem\] {
-  margin-top: 4rem;
-}
-
-.mt-\[3rem\] {
-  margin-top: 3rem;
-}
-
 .mt-\[3\.5rem\] {
   margin-top: 3.5rem;
+}
+
+.mt-\[5rem\] {
+  margin-top: 5rem;
 }
 
 .block {
@@ -1166,8 +1146,8 @@ body{
 
 .left-middle-container {
   position: absolute;
-  top: 500px;
-  left: -50px;
+  top: 25rem;
+  left: -5rem;
   display: flex;
   rotate: -23.98deg;
   z-index: -1;
@@ -1423,10 +1403,6 @@ textarea{
 
   .md\:mt-\[10rem\] {
     margin-top: 10rem;
-  }
-
-  .md\:mt-\[8rem\] {
-    margin-top: 8rem;
   }
 
   .md\:mt-\[12rem\] {
