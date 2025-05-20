@@ -660,18 +660,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-\[6rem\] {
-  margin-top: 6rem;
-}
-
-.mt-\[6\.5rem\] {
-  margin-top: 6.5rem;
-}
-
-.mt-\[7rem\] {
-  margin-top: 7rem;
-}
-
 .mt-\[7\.5rem\] {
   margin-top: 7.5rem;
 }
@@ -1363,7 +1351,7 @@ input{
   color: inherit;
   margin: 0;
   padding: 6px;
-  border: 1px black solid;
+  border: 1px #323232 solid;
   border-radius: .75rem;
 }
 
@@ -1376,7 +1364,7 @@ textarea{
   line-height: inherit;
   color: inherit;
   padding: 6px;
-  border: 1px black solid;
+  border: 1px #323232 solid;
   border-radius: .75rem;
   margin-top: .5rem;
 }
