@@ -131,6 +131,8 @@ const links = document.querySelectorAll('.live-link');
   hamburgerBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('-translate-x-full');
     mobileMenu.classList.toggle('translate-x-0');
+    document.body.classList.toggle('no-scroll');
+
   });
 
   document.querySelectorAll('#mobile-menu a').forEach(link => {

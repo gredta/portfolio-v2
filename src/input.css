@@ -249,3 +249,8 @@ textarea{
     overflow: hidden;
     width: 25rem;
 }
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
