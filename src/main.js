@@ -125,9 +125,30 @@ const links = document.querySelectorAll('.live-link');
     });
   });
 
-  gsap.to(".dawn-img", {
-    rotation: 360,
-    duration: 5,
-    ease: "linear",
-    repeat: -1,
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('-translate-x-full');
+    mobileMenu.classList.toggle('translate-x-0');
   });
+
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('-translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+    });
+  });
+
+  const dawnMobile = document.querySelector(".dawn-mobile");
+
+  if (dawnMobile) {
+    gsap.to(dawnMobile, {
+      rotation: "+=360",
+      duration: 5,
+      repeat: -1,
+      ease: "none",
+      transformOrigin: "50% 50%",
+    });
+  }
+  

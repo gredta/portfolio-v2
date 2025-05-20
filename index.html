@@ -28,7 +28,7 @@
                 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full 
                 after:bg-black after:scale-x-0 after:origin-left 
                 after:transition-transform after:duration-300 
-                hover:after:scale-x-100" href="/">home</a></div>
+                hover:after:scale-x-100" href="#">home</a></div>
       <img src="./svgs/Dawn.svg" alt="flower icon" class="dawn-header w-7 h-7">
       <div class=""><a class="relative inline-block 
                 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full 
@@ -55,9 +55,19 @@
                 hover:after:scale-x-100" href="#contact">contact</a></div>
     </div>
   </header>
-  <div class="top-left-hamburger block md:hidden sticky top-0">
-    <img class="w-[3rem] dawn-img" src="./svgs/Dawn.svg">
+  <div class="top-left-hamburger block md:hidden sticky top-0 z-50">
+    <button id="hamburger-btn">
+      <img class="w-[3rem] dawn-mobile" src="./svgs/Dawn.svg" alt="Menu" />
+    </button>
   </div>
+  <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden pt-[5rem]">
+    <ul class="p-6 space-y-4 text-xl">
+      <li><a href="/"><p class="font-editorial-ultralight">home</p></a></li>
+      <li><a href="#projects"><p class="font-editorial-ultralight">projects</p></a></li>
+      <li><a href="#experience"><p class="font-editorial-ultralight">experience</p></a></li>
+      <li><a href="#contact"><p class="font-editorial-ultralight">contact</p></a></li>
+    </ul>
+  </nav>
   <div class="top-right-container overflow-hidden relative">
     <img src="./images/flower-1.png" class="top-right-image" alt="Image 1">
   </div>
@@ -489,7 +499,7 @@
           <h1 class="text-5xl">contact me</h1>
           <div class="sm:grid grid-cols-2">
             <div>
-              <p class="font-InterVariable font-thin text-md md:text-xl font-light mt-2 lg:mb-10 mb-6">send me an email...</p>
+              <p class="font-InterVariable font-thin text-md md:text-xl font-light mt-2 lg:mb-10 mb-6">send me a message...</p>
               <!-- modify this form HTML and place wherever you want your form -->
               <form class="" action="https://formspree.io/f/xldbvlgy" method="POST">
                 <div class="w-full sm:max-w-[20rem] lg:mb-0 mb-10">
@@ -506,7 +516,7 @@
             </div>
           </div>
           <div class="">
-          <p class="font-InterVariable font-thin text-md md:text-xl font-light mt-2 lg:mb-10 mb-6 text-center">or find me online!</p>
+          <p class="font-InterVariable font-thin text-md md:text-xl font-light mt-2 lg:mb-10 mb-6 text-center">...or find me online!</p>
           <div class="flex gap-4 items-center justify-center mx-auto">
             <a href="https://github.com/gredta"><img class="w-12" src="./svgs/github.svg"></a>
             <a href="https://linkedin.com/in/gredta"><img class="w-12" src="./svgs/linkedin.svg"></a>
