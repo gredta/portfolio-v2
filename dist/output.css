@@ -656,16 +656,24 @@ video {
   margin-top: 1rem;
 }
 
-.mt-\[3\.5rem\] {
-  margin-top: 3.5rem;
-}
-
 .mt-\[5rem\] {
   margin-top: 5rem;
 }
 
-.mt-\[5\.5rem\] {
-  margin-top: 5.5rem;
+.mt-\[6rem\] {
+  margin-top: 6rem;
+}
+
+.mt-\[6\.5rem\] {
+  margin-top: 6.5rem;
+}
+
+.mt-\[7rem\] {
+  margin-top: 7rem;
+}
+
+.mt-\[7\.5rem\] {
+  margin-top: 7.5rem;
 }
 
 .block {
@@ -686,6 +694,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-7 {
@@ -711,10 +723,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .max-h-\[15rem\] {
@@ -753,8 +761,8 @@ video {
   width: 15rem;
 }
 
-.w-\[3rem\] {
-  width: 3rem;
+.w-\[2\.5rem\] {
+  width: 2.5rem;
 }
 
 .w-\[600px\] {
@@ -772,14 +780,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[2rem\] {
-  width: 2rem;
-}
-
-.w-\[2\.5rem\] {
-  width: 2.5rem;
 }
 
 .max-w-\[40rem\] {
@@ -978,19 +978,14 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pt-\[4rem\] {
