@@ -556,16 +556,16 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .left-0 {
   left: 0px;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-20 {
@@ -664,6 +664,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-\[5\.5rem\] {
+  margin-top: 5.5rem;
+}
+
 .block {
   display: block;
 }
@@ -688,6 +692,10 @@ video {
   height: 1.75rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[10rem\] {
   height: 10rem;
 }
@@ -705,12 +713,20 @@ video {
   height: 100%;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-\[15rem\] {
   max-height: 15rem;
 }
 
 .max-h-\[22rem\] {
   max-height: 22rem;
+}
+
+.max-h-\[27rem\] {
+  max-height: 27rem;
 }
 
 .w-12 {
@@ -756,6 +772,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
+}
+
+.w-\[2\.5rem\] {
+  width: 2.5rem;
 }
 
 .max-w-\[40rem\] {
@@ -858,6 +882,14 @@ video {
   overflow-y: auto;
 }
 
+.overscroll-none {
+  overscroll-behavior: none;
+}
+
+.overscroll-y-none {
+  overscroll-behavior-y: none;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -949,6 +981,16 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .pt-\[4rem\] {
@@ -1169,7 +1211,7 @@ video {
 
 h1, h2, h3, .fancy-heading {
   font-family: 'Editorial New', sans-serif;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 h1.italic, h2.italic {
@@ -1180,6 +1222,9 @@ h1.italic, h2.italic {
 body{
   color: #323232;
   overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  /* optional, helps with containing abs. elements */
 }
 
 .top-right-container {
@@ -1253,7 +1298,7 @@ body{
   border-radius: .75rem;
   border: #323232;
   border-width: 1px;
-  border-style: double;
+  border-style: solid;
 }
 
 @media screen and (max-width: 767px) {
@@ -1302,13 +1347,6 @@ body{
   }
 }
 
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  position: relative;
-  /* optional, helps with containing abs. elements */
-}
-
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -1349,10 +1387,10 @@ textarea{
 }
 
 .top-left-hamburger{
-  position: sticky;
   top: 0;
   left: 0;
   margin: 10px;
+  z-index: 50;
 }
 
 .mobile-bottom-image-container{
@@ -1360,6 +1398,7 @@ textarea{
   bottom: -10rem;
   left: -10rem;
   transform: rotate(19deg);
+  z-index: -1;
 }
 
 .mobile-top-image-container{
@@ -1372,9 +1411,13 @@ textarea{
   width: 25rem;
 }
 
-.no-scroll {
+html.overflow-hidden {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
+}
+
+body {
+  height: 100%;
 }
 
 .after\:absolute::after {
@@ -1498,6 +1541,11 @@ textarea{
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .md\:pt-\[5rem\] {

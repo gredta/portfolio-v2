@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="">
+<body class="relative">
   <header class="my-5 mx-5">
     <div class="md:flex hidden gap-8 font-editorial-ultralight text-xl font-light items-center animate-fade-in">
       <div class=""><a class="relative inline-block 
@@ -55,20 +55,20 @@
                 hover:after:scale-x-100" href="#contact">contact</a></div>
     </div>
   </header>
-  <div class="top-left-hamburger block md:hidden sticky top-0 z-50">
+  <div class="top-left-hamburger block md:hidden fixed top-0 z-50 no-scroll">
     <button id="hamburger-btn">
-      <img class="w-[3rem] dawn-mobile" src="./svgs/Dawn.svg" alt="Menu" />
+      <img class="w-[2.5rem] dawn-mobile" src="./svgs/Dawn.svg" alt="Menu" />
     </button>
   </div>
-  <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden pt-[5rem] overflow-hidden">
+  <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden pt-[5rem] overflow-hidden h-[100vh] overscroll-none	overscroll-y-none	scrollbar-hide">
     <ul class="p-6 space-y-8 text-xl">
-      <li><a href="/"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl">home</p></a></li>
-      <li><a href="#projects"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl">projects</p></a></li>
-      <li><a href="#experience"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl">experience</p></a></li>
-      <li><a href="#contact"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl">contact</p></a></li>
+      <li><a href="/"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl font-light">home</p></a></li>
+      <li><a href="#projects"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl font-light">projects</p></a></li>
+      <li><a href="#experience"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl font-light">experience</p></a></li>
+      <li><a href="#contact"><p class="font-editorial-ultralight underline underline-offset-4 decoration-1 text-2xl font-light">contact</p></a></li>
     </ul>
-    <div class="mobile-bottom-image-container md:hidden block">
-      <img class="" src="./images/flower-3.png">
+    <div class="mobile-bottom-image-container md:hidden block z-10">
+      <img class="max-h-[27rem]" src="./images/flower-3.png">
     </div>
     <div class="mobile-top-image-container md:hidden block">
       <img class="" src="./images/flower-2.png">
@@ -92,7 +92,7 @@
       <img src="./images/flower-3.png" alt="Flower Image">
     </div>
   </div>
-  <h1 class="md:text-9xl text-7xl mt-[3.5rem] md:mt-[12rem] text-center">greta belegu</h1>
+  <h1 class="md:text-9xl text-7xl mt-[5.5rem] md:mt-[12rem] text-center font-lighter">greta belegu</h1>
   <p id="typewriter" class="text-center font-InterVariable font-thin text-md md:text-xl font-light ">web developer &
     front-end engineer</p>
 
@@ -114,53 +114,53 @@
       <h3 class="text-center text-3xl md:text-5xl mt-0 md:mb-10 mb-6 italic">Brands I've worked with</h3>
     </div>
 
-    <div class="carousel-track bg-pink flex items-center gap-10 whitespace-nowrap py-2">
-      <div class="carousel-inner flex gap-10">
-        <div class="w-[10rem] h-25 flex items-center justify-center">
+    <div class="carousel-track bg-pink flex items-center gap-10 whitespace-nowrap py-14 md:py-2">
+      <div class="carousel-inner flex gap-10 items-center">
+        <div class="w-[10rem] md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/thebarbshop.svg" class="h-full  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-[15rem] h-25 flex items-center justify-center">
+        <div class="w-[15rem] md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/bloomingdales-stores.svg" class="  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-40 h-25 flex items-center justify-center">
+        <div class="w-40  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/biore.svg" class="  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-[15rem] h-25 flex items-center justify-center">
+        <div class="w-[15rem]  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/burts-bees.svg" class=" object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-40 h-25 flex items-center justify-center">
+        <div class="w-40  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/kao-corp.svg" class=" object-contain text-white filter invert brightness-0" />
         </div>
 
-        <div class="w-[10rem] h-25 flex items-center justify-center">
+        <div class="w-[10rem] md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/thebarbshop.svg" class="h-full  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-[15rem] h-25 flex items-center justify-center">
+        <div class="w-[15rem] md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/bloomingdales-stores.svg" class="  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-40 h-25 flex items-center justify-center">
+        <div class="w-40  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/biore.svg" class="  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-[15rem] h-25 flex items-center justify-center">
+        <div class="w-[15rem]  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/burts-bees.svg" class=" object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-40 h-25 flex items-center justify-center">
+        <div class="w-40  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/kao-corp.svg" class=" object-contain text-white filter invert brightness-0" />
         </div>
 
-        <div class="w-[10rem] h-25 flex items-center justify-center">
+        <div class="w-[10rem] md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/thebarbshop.svg" class="h-full  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-[15rem] h-25 flex items-center justify-center">
+        <div class="w-[15rem] md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/bloomingdales-stores.svg" class="  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-40 h-25 flex items-center justify-center">
+        <div class="w-40  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/biore.svg" class="  object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-[15rem] h-25 flex items-center justify-center">
+        <div class="w-[15rem]  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/burts-bees.svg" class=" object-contain text-white filter invert brightness-0" />
         </div>
-        <div class="w-40 h-25 flex items-center justify-center">
+        <div class="w-40  md:h-25 h-10 flex items-center justify-center">
           <img src="./logos/kao-corp.svg" class=" object-contain text-white filter invert brightness-0" />
         </div>
 

@@ -131,8 +131,6 @@ const links = document.querySelectorAll('.live-link');
   hamburgerBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('-translate-x-full');
     mobileMenu.classList.toggle('translate-x-0');
-    document.body.classList.toggle('no-scroll');
-
   });
 
   document.querySelectorAll('#mobile-menu a').forEach(link => {
@@ -147,7 +145,7 @@ const links = document.querySelectorAll('.live-link');
   if (dawnMobile) {
     gsap.to(dawnMobile, {
       rotation: "+=360",
-      duration: 5,
+      duration: 6,
       repeat: -1,
       ease: "none",
       transformOrigin: "50% 50%",

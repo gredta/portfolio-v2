@@ -61,7 +61,7 @@
 
   h1, h2, h3, .fancy-heading {
     font-family: 'Editorial New', sans-serif;
-    font-weight: 100;
+    font-weight: lighter;
   }
 
   
@@ -72,6 +72,8 @@
   body{
     color: #323232;
     overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative; /* optional, helps with containing abs. elements */
 
   }
 
@@ -136,7 +138,7 @@
   border-radius: .75rem;
   border: #323232;
   border-width: 1px;
-  border-style: double;
+  border-style: solid;
 }
 
 
@@ -183,11 +185,6 @@
   
 }
 
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  position: relative; /* optional, helps with containing abs. elements */
-}
 
 html{
   overflow-x: hidden;
@@ -227,10 +224,10 @@ textarea{
     margin-top: .5rem;
 }
 .top-left-hamburger{
-    position: sticky;
     top: 0;
     left: 0;
     margin: 10px;
+    z-index: 50;
 }
 
 .mobile-bottom-image-container{
@@ -238,6 +235,7 @@ textarea{
     bottom: -10rem;
     left: -10rem;
     transform: rotate(19deg);
+    z-index: -1;
 }
 
 .mobile-top-image-container{
@@ -250,7 +248,11 @@ textarea{
     width: 25rem;
 }
 
-.no-scroll {
+html.overflow-hidden {
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
   }
