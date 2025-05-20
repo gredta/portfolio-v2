@@ -850,6 +850,12 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1029,6 +1035,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .decoration-1 {
@@ -1349,6 +1359,23 @@ textarea{
   top: 0;
   left: 0;
   margin: 10px;
+}
+
+.mobile-bottom-image-container{
+  position:absolute;
+  bottom: -10rem;
+  left: -10rem;
+  transform: rotate(19deg);
+}
+
+.mobile-top-image-container{
+  position:absolute;
+  top: -3rem;
+  right: -10rem;
+  transform: rotate(19deg);
+  z-index: -1;
+  overflow: hidden;
+  width: 25rem;
 }
 
 .after\:absolute::after {
