@@ -124,3 +124,10 @@ const links = document.querySelectorAll('.live-link');
       gsap.to(arrow, { x: 0, duration: 0.3, ease: "power2.inOut" });
     });
   });
+
+  gsap.to(".dawn-img", {
+    rotation: 360,
+    duration: 5,
+    ease: "linear",
+    repeat: -1,
+  });

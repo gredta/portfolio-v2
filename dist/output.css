@@ -552,6 +552,14 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -620,6 +628,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -632,8 +644,28 @@ video {
   margin-top: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-\[5rem\] {
+  margin-top: 5rem;
+}
+
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
+.mt-\[8rem\] {
+  margin-top: 8rem;
+}
+
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
+.mt-\[3rem\] {
+  margin-top: 3rem;
+}
+
+.mt-\[3\.5rem\] {
+  margin-top: 3.5rem;
 }
 
 .block {
@@ -660,6 +692,10 @@ video {
   height: 1.75rem;
 }
 
+.h-\[10rem\] {
+  height: 10rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -681,6 +717,10 @@ video {
   max-height: 22rem;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -693,8 +733,29 @@ video {
   width: 1.75rem;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[15rem\] {
+  width: 15rem;
+}
+
+.w-\[3rem\] {
+  width: 3rem;
+}
+
 .w-\[600px\] {
   width: 600px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -741,6 +802,10 @@ video {
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -761,6 +826,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -777,17 +846,16 @@ video {
   white-space: nowrap;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-t-xl {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
 }
 
 .border {
@@ -858,6 +926,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pt-\[4rem\] {
+  padding-top: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -909,6 +981,10 @@ video {
   font-weight: 300;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-thin {
   font-weight: 100;
 }
@@ -934,6 +1010,11 @@ video {
   text-underline-offset: 4px;
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .brightness-0 {
   --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -946,6 +1027,11 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-colors {
@@ -1093,6 +1179,32 @@ body{
   /* Add padding to avoid touching edges */
 }
 
+.bottom-left-container {
+  position: absolute;
+  bottom: 5rem;
+  left: -50px;
+  display: flex;
+  rotate: -23.98deg;
+  z-index: -1;
+  flex-direction: column;
+  /* Stack the images vertically */
+  gap: 10px;
+  /* Add space between the images */
+}
+
+.bottom-right-container {
+  position: absolute;
+  bottom: 17rem;
+  right: -150px;
+  display: flex;
+  rotate: 110.98deg;
+  z-index: -1;
+  flex-direction: column;
+  /* Stack the images vertically */
+  gap: 10px;
+  /* Add space between the images */
+}
+
 /* CSS */
 
 .swiper-slide {
@@ -1120,16 +1232,44 @@ body{
 
   .left-middle-container {
     top: 90px;
-    left: -50px;
-    width: 200px;
+    left: -4rem;
+    width: 15rem;
+  }
+
+  .bottom-left-container {
+    position: absolute;
+    bottom: 4rem;
+    left: -4rem;
+    display: flex;
+    rotate: -23.98deg;
+    z-index: -1;
+    flex-direction: column;
+    /* Stack the images vertically */
+    gap: 10px;
+    /* Add space between the images */
+    width: 20rem;
+  }
+
+  .bottom-right-container {
+    position: absolute;
+    bottom: 35rem;
+    right: -6rem;
+    display: flex;
+    rotate: 110.98deg;
+    z-index: -1;
+    flex-direction: column;
+    /* Stack the images vertically */
+    gap: 10px;
+    /* Add space between the images */
+    width: 15rem;
   }
 }
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
   /* optional, helps with containing abs. elements */
-  margin-bottom: 5rem;
 }
 
 html{
@@ -1137,6 +1277,45 @@ html{
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
   /* Adjust to your header height */
+}
+
+.footer-wrapper{
+  background-color: rgba(228, 245, 132, .34);
+}
+
+input{
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 6px;
+  border: 1px black solid;
+  border-radius: .75rem;
+}
+
+textarea{
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 6px;
+  border: 1px black solid;
+  border-radius: .75rem;
+  margin-top: .5rem;
+}
+
+.top-left-hamburger{
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 10px;
 }
 
 .after\:absolute::after {
@@ -1213,6 +1392,16 @@ html{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 640px) {
+  .sm\:grid {
+    display: grid;
+  }
+
+  .sm\:max-w-\[20rem\] {
+    max-width: 20rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mx-0 {
     margin-left: 0px;
@@ -1236,6 +1425,10 @@ html{
     margin-top: 10rem;
   }
 
+  .md\:mt-\[8rem\] {
+    margin-top: 8rem;
+  }
+
   .md\:mt-\[12rem\] {
     margin-top: 12rem;
   }
@@ -1246,6 +1439,18 @@ html{
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:pt-\[5rem\] {
+    padding-top: 5rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-right {
@@ -1269,6 +1474,14 @@ html{
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .lg\:mr-auto {
     margin-right: auto;
   }
@@ -1315,4 +1528,3 @@ html{
     text-align: left;
   }
 }
-  

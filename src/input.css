@@ -104,6 +104,28 @@
     padding: 40px; /* Add padding to avoid touching edges */
   }
 
+  .bottom-left-container {
+    position: absolute;
+    bottom: 5rem;
+    left: -50px;
+    display: flex;
+    rotate: -23.98deg;
+    z-index: -1;
+    flex-direction: column; /* Stack the images vertically */
+    gap: 10px; /* Add space between the images */
+  }
+
+  .bottom-right-container {
+    position: absolute;
+    bottom: 17rem;
+    right: -150px;
+    display: flex;
+    rotate: 110.98deg;
+    z-index: -1;
+    flex-direction: column; /* Stack the images vertically */
+    gap: 10px; /* Add space between the images */
+  }
+
 
   /* CSS */
 .swiper-slide {
@@ -132,23 +154,81 @@
 
   .left-middle-container {
     top: 90px;
-    left: -50px;
-    width: 200px;
+    left: -4rem;
+    width: 15rem;
+  }
+  .bottom-left-container {
+    position: absolute;
+    bottom: 4rem;
+    left: -4rem;
+    display: flex;
+    rotate: -23.98deg;
+    z-index: -1;
+    flex-direction: column; /* Stack the images vertically */
+    gap: 10px; /* Add space between the images */
+    width: 20rem;
+  }
+
+  .bottom-right-container {
+    position: absolute;
+    bottom: 35rem;
+    right: -6rem;
+    display: flex;
+    rotate: 110.98deg;
+    z-index: -1;
+    flex-direction: column; /* Stack the images vertically */
+    gap: 10px; /* Add space between the images */
+    width: 15rem;
   }
   
 }
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative; /* optional, helps with containing abs. elements */
-  margin-bottom: 5rem;
 }
 
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 3rem; /* Adjust to your header height */
-
-
 }
-  
+
+.footer-wrapper{
+    background-color: rgba(228, 245, 132, .34);
+}
+
+input{
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 6px;
+    border: 1px black solid;
+    border-radius: .75rem;
+}
+
+textarea{
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    padding: 6px;
+    border: 1px black solid;
+    border-radius: .75rem;
+    margin-top: .5rem;
+}
+.top-left-hamburger{
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
