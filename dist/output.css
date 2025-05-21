@@ -721,6 +721,14 @@ video {
   max-height: 27rem;
 }
 
+.max-h-\[13rem\] {
+  max-height: 13rem;
+}
+
+.max-h-\[12rem\] {
+  max-height: 12rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -768,6 +776,14 @@ video {
 
 .max-w-\[40rem\] {
   max-width: 40rem;
+}
+
+.max-w-\[30rem\] {
+  max-width: 30rem;
+}
+
+.max-w-\[10rem\] {
+  max-width: 10rem;
 }
 
 .-translate-x-full {
