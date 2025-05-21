@@ -132,7 +132,6 @@ const links = document.querySelectorAll('.live-link');
     mobileMenu.classList.toggle('-translate-x-full');
     mobileMenu.classList.toggle('translate-x-0');
     body.classList.toggle('overflow-hidden');
-    body.classList.toggle('height-[100vh]')
     body.classList.toggle('fixed')
   });
 
