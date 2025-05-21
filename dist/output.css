@@ -692,10 +692,6 @@ video {
   height: 1.75rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-\[10rem\] {
   height: 10rem;
 }
@@ -868,14 +864,6 @@ video {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overscroll-none {
-  overscroll-behavior: none;
-}
-
-.overscroll-y-none {
-  overscroll-behavior-y: none;
 }
 
 .whitespace-nowrap {
@@ -1106,14 +1094,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-100 {
-  transition-duration: 100ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @font-face {

@@ -132,6 +132,7 @@ const links = document.querySelectorAll('.live-link');
     mobileMenu.classList.toggle('-translate-x-full');
     mobileMenu.classList.toggle('translate-x-0');
     body.classList.toggle('overflow-hidden');
+    e.stopPropagation(); // Prevent the click from bubbling to the document
     body.classList.toggle('fixed')
   });
 
@@ -140,6 +141,16 @@ const links = document.querySelectorAll('.live-link');
       mobileMenu.classList.add('-translate-x-full');
       mobileMenu.classList.remove('translate-x-0');
     });
+  });
+
+  document.addEventListener('click', (e) => {
+    const isClickInsideTarget = targetElement.contains(e.target);
+    const isClickOnToggleButton = toggleButton.contains(e.target);
+    const isClickOnLink = e.target.closest('a');
+  
+    if (!isClickInsideTarget || isClickOnLink) {
+      document.body.classList.remove('fixed');
+    }
   });
 
   const dawnMobile = document.querySelector(".dawn-mobile");
