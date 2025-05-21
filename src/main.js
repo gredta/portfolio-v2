@@ -200,3 +200,30 @@ menuLinks.forEach(link => {
   });
 });
   
+
+// Select ALL internal anchor links pointing to #ids
+const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+internalLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href').slice(1);
+    const targetElement = document.getElementById(targetId);
+
+    // Only apply if target element exists
+    if (targetElement) {
+      e.preventDefault();
+
+      // Scroll to center of viewport
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+
+      // Optional: close mobile menu if it's open
+      if (window.innerWidth < 768) {
+        closeMenu();
+        document.body.classList.remove('fixed');
+      }
+    }
+  });
+});
