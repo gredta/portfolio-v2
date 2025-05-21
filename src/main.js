@@ -201,7 +201,6 @@ menuLinks.forEach(link => {
 });
   
 
-// Select ALL internal anchor links pointing to #ids
 const internalLinks = document.querySelectorAll('a[href^="#"]');
 
 internalLinks.forEach(link => {
@@ -209,17 +208,19 @@ internalLinks.forEach(link => {
     const targetId = this.getAttribute('href').slice(1);
     const targetElement = document.getElementById(targetId);
 
-    // Only apply if target element exists
     if (targetElement) {
       e.preventDefault();
 
-      // Scroll to center of viewport
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
+      const rect = targetElement.getBoundingClientRect();
+      const absoluteY = window.scrollY + rect.top;
+      const targetY = absoluteY - (window.innerHeight / 2) + (rect.height / 2);
+
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth'
       });
 
-      // Optional: close mobile menu if it's open
+      // Close mobile menu if open
       if (window.innerWidth < 768) {
         closeMenu();
         document.body.classList.remove('fixed');
