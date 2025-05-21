@@ -201,6 +201,7 @@ menuLinks.forEach(link => {
 });
   
 
+// Select ALL internal anchor links pointing to #ids
 const internalLinks = document.querySelectorAll('a[href^="#"]');
 
 internalLinks.forEach(link => {
@@ -208,19 +209,17 @@ internalLinks.forEach(link => {
     const targetId = this.getAttribute('href').slice(1);
     const targetElement = document.getElementById(targetId);
 
+    // Only apply if target element exists
     if (targetElement) {
       e.preventDefault();
 
-      const rect = targetElement.getBoundingClientRect();
-      const absoluteY = window.scrollY + rect.top;
-      const targetY = absoluteY - (window.innerHeight / 2) + (rect.height / 2);
-
-      window.scrollTo({
-        top: targetY,
-        behavior: 'smooth'
+      // Scroll to center of viewport
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
       });
 
-      // Close mobile menu if open
+      // Optional: close mobile menu if it's open
       if (window.innerWidth < 768) {
         closeMenu();
         document.body.classList.remove('fixed');
@@ -228,3 +227,36 @@ internalLinks.forEach(link => {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const gridWrapper = document.querySelector(".grid");
+    if (!gridWrapper) {
+      console.error("No .grid element found!");
+      return;
+    }
+  
+    // Get grid's top relative to document
+    const gridTop = gridWrapper.getBoundingClientRect().top + window.scrollY;
+  
+    // Select experience timeline-items (right column)
+    const experienceItems = gridWrapper.querySelectorAll(
+      "div.text-left .timeline-item"
+    );
+  
+    console.log(`Found ${experienceItems.length} experience items`);
+  
+    experienceItems.forEach(item => {
+      const itemTop = item.getBoundingClientRect().top + window.scrollY;
+      const relativeTop = itemTop - gridTop;
+  
+      const star = document.createElement("img");
+      star.src = "./svgs/dawn.svg";
+      star.className =
+        "w-6 h-6 absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:block";
+      star.style.top = `${relativeTop}px`;
+  
+      gridWrapper.appendChild(star);
+    });
+  });
+  

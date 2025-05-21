@@ -258,3 +258,7 @@ html.overflow-hidden {
     position: fixed;
     width: 100%;
   }
+
+  .grid {
+    position: relative;
+  }
