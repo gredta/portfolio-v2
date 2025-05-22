@@ -544,40 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .static {
   position: static;
 }
@@ -592,6 +558,10 @@ video {
 
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .left-0 {
@@ -808,6 +778,10 @@ video {
 
 .w-\[2\.5rem\] {
   width: 2.5rem;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
 }
 
 .w-\[70\%\] {
@@ -1376,6 +1350,32 @@ body{
   /* Add space between the images */
 }
 
+.middle-right-container {
+  position: absolute;
+  bottom: 73rem;
+  right: -15rem;
+  display: flex;
+  rotate: -27deg;
+  z-index: -1;
+  flex-direction: column;
+  /* Stack the images vertically */
+  gap: 10px;
+  /* Add space between the images */
+}
+
+.middle-left-container {
+  position: absolute;
+  bottom: 40rem;
+  left: -20rem;
+  display: flex;
+  rotate: -18deg;
+  z-index: -1;
+  flex-direction: column;
+  /* Stack the images vertically */
+  gap: 10px;
+  /* Add space between the images */
+}
+
 /* CSS */
 
 .swiper-slide {
@@ -1439,10 +1439,6 @@ body{
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
-}
-
-.footer-wrapper{
-  background-color: rgba(228, 245, 132, .34);
 }
 
 input{
@@ -1511,6 +1507,36 @@ body.fixed {
 
 .grid {
   position: relative;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-on-hover {
+  animation: spin 4s linear infinite;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  unicode-bidi: isolate;
+  margin-top: auto;
+  list-style-position: outside !important;
 }
 
 .after\:absolute::after {

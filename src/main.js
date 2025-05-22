@@ -7,6 +7,17 @@ gsap.from("h1", {
     ease: "power2.out"
   });
   
+
+
+gsap.from("h3", {
+    duration: 1,
+    y: -50,
+    opacity: 0,
+    ease: "power2.out"
+  });
+  
+  
+  
   // Select all .dawn-header images
   const dawnImages = document.querySelectorAll(".dawn-header");
   
@@ -250,13 +261,92 @@ document.addEventListener("DOMContentLoaded", () => {
       const itemTop = item.getBoundingClientRect().top + window.scrollY;
       const relativeTop = itemTop - gridTop;
   
+      const starWrapper = document.createElement("div");
+      starWrapper.className =
+        "absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:block";
+      starWrapper.style.top = `${relativeTop}px`;
+      
       const star = document.createElement("img");
       star.src = "./svgs/dawn.svg";
-      star.className =
-        "w-6 h-6 absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:block";
-      star.style.top = `${relativeTop}px`;
-  
-      gridWrapper.appendChild(star);
+      star.className = "w-6 h-6 spin-on-hover";
+      
+      starWrapper.appendChild(star);
+      gridWrapper.appendChild(starWrapper);
+      
     });
   });
   
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".timeline-item").forEach((item, i) => {
+    const fromDirection = item.closest(".text-right") ? { x: 100 } : { x: -100 };
+
+    gsap.from(item, {
+      opacity: 0,
+      ...fromDirection,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: item,
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  });
+
+  gsap.from("#experience h2", {
+  opacity: 0,
+  y: 50,
+  duration: 1.2,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: "#experience h2",
+    start: "top 90%",
+    toggleActions: "play none none reverse"
+  }
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".swiper-slide").forEach(slide => {
+  // Animate the whole slide
+  gsap.from(slide, {
+    scrollTrigger: {
+      trigger: slide,
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out",
+  });
+
+  // Animate child elements
+  const elements = slide.querySelectorAll("h2, p, .live-link, .bg-orange, .bg-purple, .bg-lightpurple, .bg-yellow");
+  gsap.from(elements, {
+    scrollTrigger: {
+      trigger: slide,
+      start: "top 85%",
+    },
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.1,
+  });
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.to(".footer-bg-swipe", {
+  x: 0,
+  duration: 1.2,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".footer-wrapper",
+    start: "top 80%",
+    toggleActions: "play none none none"
+  }
+});
