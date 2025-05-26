@@ -206,7 +206,7 @@
 
         <!-- Slide 1 -->
         <div class="swiper-slide flex flex-col items-center lg:mr-auto max-w-[40rem] overflow-hidden">
-          <div class="lg:max-h-[25rem] max-h-[12rem] overflow-y-auto w-full z-20">
+          <div class="lg:max-h-[25rem] sm:max-h-[18rem] max-h-[12rem] overflow-y-auto w-full z-20">
             <img class="" src="./images/plum.jpg" width="100%">
           </div>
           <div class="text-left my-6 lg:grid grid-cols-[2fr_1fr] mx-4">
@@ -510,8 +510,8 @@
       </div>
   </section>
 
-
-  <section class="pt-10 pb-10 px-6 md:px-16 lg:px-32" id="experienceeducation">
+  <!-- Desktop Experience and Education -->
+  <section class="pt-10 pb-10 px-6 md:px-16 lg:px-32 md:block hidden" id="experienceeducation">
     <h2 class="text-center text-5xl italic mb-16 md:block hidden">Education & Experience</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
@@ -525,7 +525,6 @@
         <!-- Education 1 -->
         <div id="education-mobile"
           class="space-y-[1.5rem] relative z-10 text-right pr-0 md:pr-10 order-1 md:order-none">
-          <h2 class="text-center text-5xl italic md:hidden block">Education</h2>
           <div class="md:mt-0 mt-4 timeline-item relative ">
             <h4 class="font-editorial-ultralight text-2xl font-light">Master of Professional Studies, Mobile and Web
               Applications Development</h4>
@@ -538,14 +537,13 @@
 
         <!-- Experience 1 -->
         <div id="experience-mobile" class="relative z-10 text-left pl-0 md:pl-10 space-y-[1.5rem]">
-          <h2 class="text-center text-5xl italic md:hidden block">Experience</h2>
           <div class="md:mt-0 mt-4 timeline-item relative">
             <h4 class="font-editorial-ultralight text-2xl font-light">Web Developer & Digital Designer</h4>
-            <p class="font-InterVariable font-lighter font-thin mt-1">Bloomingdale’s</p>
+            <p class="font-InterVariable font-lighter font-thin mt-1">Bloomingdale's</p>
             <ul class="list-disc list-inside mt-2 text-sm max-w-md mx-auto md:ml-0 md:mr-auto">
               <li>Plan, develop, and maintain Bloomingdales.com homepage using AEM CMS and custom HTML, CSS, and
                 JavaScript.</li>
-              <li>QA website to ensure development matches the creative team’s designs and ensure content functions
+              <li>QA website to ensure development matches the creative team's designs and ensure content functions
                 correctly on all screen sizes
                 using Jenkins and Sauce Labs.</li>
               <li>Conceptualize and design new components and content layouts in Adobe XD and Figma while considering UX
@@ -640,11 +638,95 @@
     </div>
   </section>
 
+  <!-- Mobile Experience -->
+  <div class="mx-4 mb-10 pt-10 block md:hidden">
+    <h2 class="text-center text-5xl mb-10 italic block">Experience</h2>
+    <div id="experience-mobile" class="relative z-10 text-left pl-0 space-y-[1.5rem]">
+      <div class="timeline-item relative">
+        <h4 class="font-editorial-ultralight text-2xl font-light">Web Developer & Digital Designer</h4>
+        <p class="font-InterVariable font-lighter font-thin">Master of Professional Studies, Mobile and Web
+          Applications Development</p>
+        <ul class="list-disc list-inside mt-2 text-sm max-w-md mx-auto ml-4 ">
+          <li>Plan, develop, and maintain Bloomingdales.com homepage using AEM CMS and custom HTML, CSS, and
+            JavaScript.</li>
+          <li>QA website to ensure development matches the creative team's designs and ensure content functions
+            correctly on all screen sizes
+            using Jenkins and Sauce Labs.</li>
+          <li>Conceptualize and design new components and content layouts in Adobe XD and Figma while considering UX
+            best practices.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item relative">
+        <h4 class="font-editorial-ultralight text-2xl font-light">Web Developer</h4>
+        <p class="font-InterVariable font-lighter font-thin">University of Colorado</p>
+        <ul class="list-disc list-inside mt-2 text-sm max-w-md mx-auto ml-4 ">
+          <li>Develop and maintain the Educator Support & Department of Psychiatry website using custom WordPress
+            theme, Sitefinity, and
+            front-end programming languages such as HTML5, CSS3, and JavaScript.</li>
+          <li>Design, code, and implement web plugins to display information for optimal functionality and usability
+            using PHP and JavaScript.</li>
+          <li>Analyze websites for opportunities of efficiency and automation, providing strategies and designs for
+            improvement.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item relative">
+        <h4 class="font-editorial-ultralight text-2xl font-light">Web Developer</h4>
+        <p class="font-InterVariable font-lighter font-thin">SMAKK Studios</p>
+        <ul class="list-disc list-inside mt-2 text-sm max-w-md mx-auto ml-4 ">
+          <li>Plan, develop, test, and deploy websites using HTML5, CSS3, Javascript, PHP, Liquid, React.js,
+            Wordpress, and Git.</li>
+          <li>Replicate web designs from Figma to ensure pixel-perfect implementation of designers' visions.</li>
+          <li>Optimize web applications for WCAG accessibility compliance, Lighthouse performance, and security.
+          </li>
+          <li>Contribute to the maintenance and improvement of website aesthetics, site navigation, and performance.
+          </li>
+        </ul>
+      </div>
+
+      <div class="timeline-item relative">
+        <h4 class="font-editorial-ultralight text-2xl font-light">Web Producer</h4>
+        <p class="font-InterVariable font-lighter font-thin">Haymarket Media</p>
+        <ul class="list-disc list-inside mt-2 text-sm max-w-md mx-auto ml-4 ">
+          <li>Build emails and email campaigns for 400k+ daily audience, using Eloqua, Litmus, and front-end tools
+            for optimal cross-platform
+            performance and collaborate with UX designers to create responsive, accessible landing pages for
+            improved user experience.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Mobile Education -->
+  <div class="mx-4 mb-10 pt-10 block md:hidden">
+    <h2 class="text-center text-5xl mb-10 italic block">Education</h2>
+    <div id="experience-mobile" class="relative z-10 text-right pl-0 space-y-[1.5rem]">
+      <div class="timeline-item relative">
+        <h4 class="font-editorial-ultralight text-2xl font-light">Master of Professional Studies, Web and Mobile Applications Development</h4>
+        <p class="font-InterVariable font-lighter font-thin">Fort Hays State University</p>
+        <p class="font-InterVariable text-sm mt-1 max-w-md mx-auto md:ml-auto md:mr-0">Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+
+      <div class="timeline-item relative">
+        <h4 class="font-editorial-ultralight text-2xl font-light">Bachelor of Arts, Web Development</h4>
+        <p class="font-InterVariable font-lighter font-thin">Hunter College</p>
+        <p class="font-InterVariable text-sm mt-1 max-w-md mx-auto md:ml-auto md:mr-0">Minors in Computer Science &
+          English
+          Awarded Dean's List in the Spring of 2021 and Fall of 2023 and recognized as a matriculated student with
+          outstanding academic records.</p>
+      </div>
+    </div>
+  </div>
 
 
   <section id="contact" class="pt-10 footer-bg">
     <div class="footer-wrapper relative overflow-hidden">
-      <div style="background-color: rgba(228, 245, 132, .34); backdrop-filter: blur(8px);" class="absolute inset-0 -translate-x-full z-0 footer-bg-swipe"></div>
+      <div style="background-color: rgba(228, 245, 132, .34); backdrop-filter: blur(8px);"
+        class="absolute inset-0 -translate-x-full z-0 footer-bg-swipe"></div>
       <footer class="relative z-10">
         <div class="w-[70%] mx-auto md:pt-[5rem] pt-[4rem] md:text-left text-center">
           <h1 class="text-5xl">contact me</h1>

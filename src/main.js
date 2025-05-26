@@ -342,7 +342,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".footer-bg-swipe", {
   x: 0,
-  duration: 1.2,
+  duration: 1.5,
   ease: "power3.out",
   scrollTrigger: {
     trigger: ".footer-wrapper",
