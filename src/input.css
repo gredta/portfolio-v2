@@ -238,6 +238,18 @@
     scale: .7;
   }
 
+ .bottom-right-container {
+    position: absolute;
+    bottom: 20rem;
+    right: -150px;
+    display: flex;
+    rotate: 110.98deg;
+    z-index: -1;
+    flex-direction: column; /* Stack the images vertically */
+    gap: 10px; /* Add space between the images */
+    scale: .5;
+  }
+
 }
 
 
