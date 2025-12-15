@@ -318,3 +318,19 @@ ul {
     margin-top: auto;
     list-style-position: outside !important;
 }
+
+.verticalline{
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-left: 1px #323232 solid;
+    transition: 0.3s;
+}
+
+.vertical-line-right{
+ 
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-left: 1px #323232 solid;
+    transition: 0.3s;
+}
