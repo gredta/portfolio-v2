@@ -78,7 +78,7 @@ if (carousel) {
 
   gsap.to(carousel, {
     x: `-=${totalWidth}`,
-    duration: 20,
+    duration: 30,
     ease: "linear",
     repeat: -1,
     modifiers: {
@@ -110,8 +110,17 @@ const swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
   spaceBetween: 80, // default (desktop)
   loop: true,
-  mousewheel: false,
+  mousewheel: true,
+  forceToAxis: true,
   speed: 800,
+
+
+  mousewheel: {
+    enabled: true,
+    forceToAxis: true,    // 👈 KEY OPTION
+    sensitivity: 1,
+    releaseOnEdges: true // lets page scroll at start/end
+  },
 
   breakpoints: {
     768: {
@@ -367,3 +376,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+document.getElementById("year").textContent = new Date().getFullYear();
