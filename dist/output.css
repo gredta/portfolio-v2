@@ -596,6 +596,11 @@ video {
   z-index: 50;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1476,6 +1481,32 @@ body{
   }
 }
 
+/* Tablet only */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* your styles here */
+
+  .left-middle-container {
+    top: 400px;
+    left: -4rem;
+    width: 15rem;
+    scale: 2.3;
+  }
+
+  .top-right-container {
+    position: absolute;
+    top: -200px;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    rotate: 18.67deg;
+    z-index: -1;
+    pointer-events: none;
+    /* optional: lets content be clickable through it */
+    scale: .7;
+  }
+}
+
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -1682,14 +1713,14 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .md\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 
   .md\:mb-10 {
@@ -1730,10 +1761,6 @@ ul {
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:grid {
-    display: grid;
   }
 
   .md\:hidden {
@@ -1795,6 +1822,11 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }

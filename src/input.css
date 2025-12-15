@@ -217,6 +217,29 @@
   }
 }
 
+/* Tablet only */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* your styles here */
+  .left-middle-container {
+    top: 400px;
+    left: -4rem;
+    width: 15rem;
+    scale: 2.3;
+  }
+  .top-right-container {
+    position: absolute;
+    top: -200px;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    rotate: 18.67deg;
+    z-index: -1;
+    pointer-events: none; /* optional: lets content be clickable through it */
+    scale: .7;
+  }
+
+}
+
 
 html{
   overflow-x: hidden;
