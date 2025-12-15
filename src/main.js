@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
       starWrapper.style.top = `${relativeTop}px`;
       
       const star = document.createElement("img");
-      star.src = "./svgs/dawn.svg";
+      star.src = "./svgs/Dawn.svg";
       star.className = "w-6 h-6 spin-on-hover";
       
       starWrapper.appendChild(star);
