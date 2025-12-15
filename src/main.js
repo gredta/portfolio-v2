@@ -350,3 +350,20 @@ gsap.to(".footer-bg-swipe", {
     toggleActions: "play none none none"
   }
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", (e) => {
+    const targetId = anchor.getAttribute("href");
+
+    // ignore empty or invalid hashes
+    if (targetId === "#" || !document.querySelector(targetId)) return;
+
+    e.preventDefault();
+
+    document.querySelector(targetId).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+});
+
