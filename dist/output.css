@@ -744,8 +744,8 @@ video {
   height: 100%;
 }
 
-.max-h-\[12rem\] {
-  max-height: 12rem;
+.max-h-\[18rem\] {
+  max-height: 18rem;
 }
 
 .max-h-\[27rem\] {
@@ -948,8 +948,8 @@ video {
   overflow: hidden;
 }
 
-.overflow-y-auto {
-  overflow-y: auto;
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .whitespace-nowrap {
@@ -1058,6 +1058,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-\[2rem\] {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-10 {
@@ -1631,6 +1636,27 @@ ul {
   margin-bottom: 5px;
   border-left: 1px #323232 solid;
   transition: 0.3s;
+}
+
+.force-scrollbar {
+  scrollbar-gutter: stable;
+}
+
+.force-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.force-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #EAFC88;
+  border-radius: 4px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.force-scrollbar::-webkit-scrollbar-track {
+  background: #FFB985;
+  border-left: 1px solid black;
 }
 
 .after\:absolute::after {
