@@ -94,11 +94,11 @@
   </nav>
 
   <div class="top-right-container overflow-hidden relative">
-    <img src="./images/flower-1.png" class="top-right-image" alt="Image 1">
+    <img src="./images/flower-1.png" class="top-right-image" alt="Image 1" loading="eager">
   </div>
   <div class="left-middle-container">
     <div class="background-image">
-      <img src="./images/flower-3.png" alt="Flower Image">
+      <img src="./images/flower-3.png" alt="Flower Image" loading="eager">
     </div>
   </div>
   <div class="bottom-left-container">
@@ -230,40 +230,54 @@
     <div class="swiper-container lg:px-[15rem] md:px-[10rem] px-[2rem] overflow-hidden">
       <div class="swiper-wrapper z-20">
 
-        <!-- Slide 1 -->
-        <div class="swiper-slide flex flex-col items-center lg:mr-auto max-w-[40rem] overflow-hidden">
-          <div class="lg:max-h-[25rem] sm:max-h-[18rem] max-h-[18rem] overflow-y-scroll w-full z-20 force-scrollbar">
-            <img class="" src="./images/plum.jpg" width="100%">
-          </div>
-          <div class="text-left my-6 lg:grid grid-cols-[2fr_1fr] mx-4">
-            <div>
-              <h2 class="text-2xl lg:text-left text-center">Plum</h2>
-              <p class="text-sm mt-1 lg:text-left text-center">A custom Shopify Store.</p>
-              <div class="lg:block hidden"><a href="https://loveyourplum.com" target="_blank"
-                  class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1 lg:w-auto w-full lg:justify-normal justify-between">
-                  <span class="link-text">Live Site</span>
-                  <img src="./images/arrow-right.svg" alt="arrow"
-                    class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
-                </a>
-              </div>
-            </div>
-            <div
-              class="flex text-center justify-center gap-2 content-center flex-wrap mx-auto uppercase font-InterVariable font-light text-xs lg:mt-0 mt-4">
-              <div class="bg-orange rounded-xl px-3 py-1 lg:w-fit h-fit">HTML</div>
-              <div class="bg-purple rounded-xl px-3 py-1 lg:w-fit h-fit">Tailwind CSS</div>
-              <div class="bg-lightpurple rounded-xl px-3 lg:w-fit py-1 h-fit">JavaScript</div>
-              <div class="bg-yellow rounded-xl px-3 py-1  lg:w-fit h-fit">Shopify Liquid</div>
-              <div class="bg-orange rounded-xl px-3 py-1 lg:w-fit h-fit">Git</div>
-            </div>
-            <div class="block lg:hidden"><a href="https://loveyourplum.com" target="_blank"
-                class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1 lg:w-auto w-full lg:justify-normal justify-between">
-                <span class="link-text">Live Site</span>
-                <img src="./images/arrow-right.svg" alt="arrow"
-                  class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1">
-              </a>
-            </div>
-          </div>
-        </div>
+       <div class="swiper-slide flex flex-col items-center lg:mr-auto max-w-[40rem] overflow-hidden">
+  <div class="relative w-full z-20">
+    <div class="lg:max-h-[25rem] sm:max-h-[18rem] max-h-[18rem] overflow-y-auto w-full">
+      <img src="./images/plum.jpg" alt="Plum project screenshot" class="w-full" />
+    </div>
+    <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent md:hidden"></div>
+  </div>
+
+  <div class="text-left my-6 lg:grid grid-cols-[2fr_1fr] mx-4">
+    <div>
+      <h2 class="text-2xl lg:text-left text-center">Plum</h2>
+      <p class="text-sm mt-1 lg:text-left text-center">A custom Shopify Store.</p>
+
+      <div class="lg:block hidden">
+        <a
+          href="https://loveyourplum.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="live-link group inline-flex items-center px-4 py-2 mt-4 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1 lg:w-auto w-full lg:justify-normal justify-between"
+        >
+          <span class="link-text">Live Site</span>
+          <img src="./images/arrow-right.svg" alt="" class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+      </div>
+    </div>
+
+    <div class="flex text-center justify-center gap-2 content-center flex-wrap mx-auto uppercase font-InterVariable font-light text-xs lg:mt-0 mt-4">
+      <div class="bg-orange rounded-xl px-3 py-1 h-fit">HTML</div>
+      <div class="bg-purple rounded-xl px-3 py-1 h-fit">Tailwind CSS</div>
+      <div class="bg-lightpurple rounded-xl px-3 py-1 h-fit">JavaScript</div>
+      <div class="bg-yellow rounded-xl px-3 py-1 h-fit">Shopify Liquid</div>
+      <div class="bg-orange rounded-xl px-3 py-1 h-fit">Git</div>
+    </div>
+
+    <div class="block lg:hidden mt-4">
+      <a
+        href="https://loveyourplum.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="live-link group inline-flex items-center px-4 py-2 border border-black rounded-md transition-colors duration-300 hover:bg-yellow hover:underline underline-offset-4 decoration-1 w-full justify-between"
+      >
+        <span class="link-text">Live Site</span>
+        <img src="./images/arrow-right.svg" alt="" class="arrow-icon w-5 h-auto ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+      </a>
+    </div>
+  </div>
+</div>
+
 
         <!-- Slide 2 -->
         <div class="swiper-slide flex flex-col items-center lg:mr-auto max-w-[40rem] overflow-hidden">
